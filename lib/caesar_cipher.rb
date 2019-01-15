@@ -17,11 +17,11 @@ else
 		end
 		c=@text_crypted
 			@text_crypted="#{c}#{decaled.chr}"
-	puts decaled
+	
 		
 	elsif((i.ord>=97)&&(i.ord<=122))
 			decaled=i.ord+entier
-puts decaled.chr
+
 			if(decaled>122)
 			 decaled=96+decaled-122	
 			end
@@ -41,5 +41,9 @@ r=@text_crypted
 return r
 
 end
-
-puts caesar_cipher('A b',1)
+puts "Saisir un text :"
+var=gets.chomp
+puts "Saisir un entier positif pas trop grand : "
+vari=gets.chomp
+vari=vari.to_i
+puts caesar_cipher(var,vari)
